@@ -23,6 +23,28 @@
 			.lentele1 {
 				width: 200px;
 							}
+			.b1 {
+				background-color: yellow;
+			}	
+			.b2 {
+				background-color: green;
+			}	
+			.b3 {
+				background-color: red;
+			}	
+			.bendras {
+				float: left;
+				border: 5px solid black;
+				padding: 20px;
+				color: white;
+				width: 300px; 
+			}
+			.nuoroda {
+				border-radius: 5px;
+				color: red;
+				padding: 20px;
+
+			}	
 
 		</style>
 	
@@ -31,9 +53,9 @@
 		<h1 class="paragrafas">Mano Portfolio</h1>
 		<h2>Apie mane</h2>
 		<p>Aš esu studentas ir mokausi HTML, PHP ir kitų, sunkiai suprantamų dalykų</p>
-		<h2> Mano lankomiausios svetainė</h2>
-		<a href="http://facebook.com">Facebookas</a><br />
-		<a href="http://www.aruodas.lt">Aruodas</a>
+		<h2>Mano lankomiausios svetainė</h2>
+		<a class="nuoroda" href="http://facebook.com">Facebookas</a><br />
+		<a class="nuoroda" href="http://www.aruodas.lt">Aruodas</a>
 		<h2>Mano muzikos top 5</h2>
 		<ol>
 			<li>Pirmas kūrinys</li>
@@ -44,22 +66,31 @@
 			<li>Kava</li>
 			<li>Pienas</li>
 		</ul>
-		<table class="lentele1">
-			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>5</td>
-				<td>6</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>8</td>
-				<td>9</td>
-			</tr>
+			<table class="lentele1">
+				<thead>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td colspan="2">4</td>
+					<td rowspan="2">6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				</tbody>
 		</table>
+
+		<div class="b1 bendras">Blokas 1</div>
+		<div class="b2 bendras">Blokas 2</div>
+		<div class="b3 bendras">Blokas 3</div>
 	</body>
 </html>
